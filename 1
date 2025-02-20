@@ -1,0 +1,24 @@
+source /opt/ros/noetic/setup.bash
+source ./devel/setup.bash
+
+roslaunch vrx_2019 sandisland.launch
+roslaunch vrx_gazebo vrx.launch
+
+
+
+roslaunch wamv_gazebo rviz_vrx.launch
+
+roslaunch vrx_gazebo usv_keydrive.launch
+
+https://github.com/osrf/vrx/wiki/VRX-Classic-Tutorials
+
+港口：
+roslaunch vorc_gazebo marina.launch
+roslaunch vorc_gazebo usv_keydrive.launch
+
+lidar:
+sudo apt install ros-noetic-hector-gazebo-plugins
+sudo apt install ros-noetic-velodyne-simulator
+
+键盘：
+sudo apt-get install ros-noetic-teleop-twist-keyboard
